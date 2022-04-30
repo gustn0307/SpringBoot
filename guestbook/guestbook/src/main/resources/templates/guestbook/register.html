@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- 게시글 등록 화면 -->
+    <th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+        <th:block th:fragment="content">
+            <h1 class="mt-4">GuestBook Register Page</h1>
+
+            <!-- form 태그의 action 속성값을 /guestbook/register 로 지정하고 POST 방식으로 전송 할 수 있도록 처리
+                 각 input 태그의 name 값은 GuestbookDTO로 수집될 데이터이므로 동일하게 맞춰주면 자동으로 수집됨 -->
+            <form th:action="@{/guestbook/register}" th:method="post">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="title" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea class="form-control" rows="5" name="content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Writer</label>
+                    <input type="text" class="form-control" name="writer" placeholder="Enter Writer">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </th:block>
+    </th:block>
+
+</html>
