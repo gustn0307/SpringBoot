@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.zerock.bimovie.repository.MovieRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-22T05:21:41" hostname="DESKTOP-Q12P12S" time="0.388">
+  <properties/>
+  <testcase name="testPaging3All()" classname="org.zerock.bimovie.repository.MovieRepositoryTests" time="0.388"/>
+  <system-out><![CDATA[14:21:33.097 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:21:33.121 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:21:33.178 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.zerock.bimovie.repository.MovieRepositoryTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:21:33.199 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.zerock.bimovie.repository.MovieRepositoryTests], using SpringBootContextLoader
+14:21:33.205 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.zerock.bimovie.repository.MovieRepositoryTests]: class path resource [org/zerock/bimovie/repository/MovieRepositoryTests-context.xml] does not exist
+14:21:33.206 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.zerock.bimovie.repository.MovieRepositoryTests]: class path resource [org/zerock/bimovie/repository/MovieRepositoryTestsContext.groovy] does not exist
+14:21:33.206 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.zerock.bimovie.repository.MovieRepositoryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:21:33.207 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.zerock.bimovie.repository.MovieRepositoryTests]: MovieRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:21:33.281 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.zerock.bimovie.repository.MovieRepositoryTests]
+14:21:33.482 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Kang HyeonSu\Desktop\WorkSpace\Spring\bimovie\bimovie\build\classes\java\main\org\zerock\bimovie\BimovieApplication.class]
+14:21:33.488 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.zerock.bimovie.BimovieApplication for test class org.zerock.bimovie.repository.MovieRepositoryTests
+14:21:33.671 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.zerock.bimovie.repository.MovieRepositoryTests]: using defaults.
+14:21:33.671 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:21:33.701 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ea27e34, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33a2499c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@e72dba7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@33c2bd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1dfd5f51, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3c321bdb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@24855019, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3abd581e, org.springframework.test.context.event.EventPublishingTestExecutionListener@4d4d8fcf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@610db97e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6f0628de, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3fabf088, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e392345, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@12f3afb5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ced35ed]
+14:21:33.708 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7674a051 testClass = MovieRepositoryTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3a7704c testClass = MovieRepositoryTests, locations = '{}', classes = '{class org.zerock.bimovie.BimovieApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@57eda880, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@338494fa, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19ae6bb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@24b6b8f6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3b77a04f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@74f6c5d8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2022-04-22 14:21:34.335  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : Starting MovieRepositoryTests using Java 11.0.12 on DESKTOP-Q12P12S with PID 21240 (started by Kang HyeonSu in C:\Users\Kang HyeonSu\Desktop\WorkSpace\Spring\bimovie\bimovie)
+2022-04-22 14:21:34.338  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 14:21:35.752  INFO 21240 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 14:21:35.854  INFO 21240 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2022-04-22 14:21:36.985  INFO 21240 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 14:21:37.076  INFO 21240 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 14:21:37.386  INFO 21240 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 14:21:37.634  INFO 21240 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 14:21:37.747  INFO 21240 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 14:21:37.813  INFO 21240 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-04-22 14:21:39.254  INFO 21240 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 14:21:39.268  INFO 21240 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 14:21:39.759  WARN 21240 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 14:21:41.833  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : Started MovieRepositoryTests in 8.008 seconds (JVM running for 11.264)
+Hibernate: 
+    select
+        movie0_.mno as col_0_0_,
+        poster1_.ino as col_1_0_,
+        count(poster1_.ino) as col_2_0_,
+        movie0_.mno as mno1_0_0_,
+        poster1_.ino as ino1_1_1_,
+        movie0_.moddate as moddate2_0_0_,
+        movie0_.regdate as regdate3_0_0_,
+        movie0_.title as title4_0_0_,
+        poster1_.fname as fname2_1_1_,
+        poster1_.idx as idx3_1_1_,
+        poster1_.movie_mno as movie_mn4_1_1_ 
+    from
+        tbl_movie movie0_ 
+    left outer join
+        tbl_poster poster1_ 
+            on (
+                poster1_.movie_mno=movie0_.mno
+            ) 
+    where
+        poster1_.idx=1 
+    group by
+        poster1_.movie_mno 
+    order by
+        movie0_.mno desc limit ?
+Hibernate: 
+    select
+        count(movie0_.mno) as col_0_0_ 
+    from
+        tbl_movie movie0_ 
+    left outer join
+        tbl_poster poster1_ 
+            on (
+                poster1_.movie_mno=movie0_.mno
+            ) 
+    where
+        poster1_.idx=1 
+    group by
+        poster1_.movie_mno
+2022-04-22 14:21:42.229  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=93, title=세계명작100), Poster(ino=186, fname=세계명작100포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.231  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.232  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=92, title=세계명작99), Poster(ino=184, fname=세계명작99포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.232  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.233  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=91, title=세계명작98), Poster(ino=182, fname=세계명작98포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.233  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.234  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=90, title=세계명작97), Poster(ino=180, fname=세계명작97포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.234  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.234  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=89, title=세계명작96), Poster(ino=178, fname=세계명작96포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.234  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.234  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=88, title=세계명작95), Poster(ino=176, fname=세계명작95포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.235  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.235  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=87, title=세계명작94), Poster(ino=174, fname=세계명작94포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.235  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=86, title=세계명작93), Poster(ino=172, fname=세계명작93포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=85, title=세계명작92), Poster(ino=170, fname=세계명작92포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : [Movie(mno=84, title=세계명작91), Poster(ino=168, fname=세계명작91포스터2.jpg, idx=1), 1]
+2022-04-22 14:21:42.236  INFO 21240 --- [    Test worker] o.z.b.repository.MovieRepositoryTests    : -----------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
